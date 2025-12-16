@@ -1,0 +1,137 @@
+/* Grundläggande stilar (Beige toner) */
+body {
+    font-family: 'Georgia', serif; /* Byt till en mer klassisk font */
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcf5; /* Mycket ljus beige */
+    color: #4a3523; /* Mörkbrun text */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #d2b48c; /* Medium beige/brun */
+    color: #4a3523;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid #a0522d; /* Accent: Sienna */
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 3em; /* Starkare rubrik */
+    letter-spacing: 5px; /* Ge rubriken ett "gallerilook" */
+    font-weight: normal;
+}
+
+/* NYTT: Navigering/Filter-flikar */
+.art-filters {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #e9e5d6; /* Lätt skuggning bakom filtret */
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: transparent;
+    color: #4a3523;
+    border: 1px solid #4a3523;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.filter-btn:hover {
+    background-color: #d2b48c;
+    color: white;
+    border-color: #d2b48c;
+}
+
+.filter-btn.active {
+    background-color: #a0522d; /* Aktiv flik med accentfärg */
+    color: white;
+    border-color: #a0522d;
+}
+
+
+/* Galleri-layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.art-piece {
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.4s ease;
+}
+
+/* NYTT: Klass för att dölja vid filtrering */
+.art-piece.hidden {
+    display: none;
+}
+
+.art-piece:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.art-piece img {
+    width: 100%;
+    height: auto;
+    max-height: 350px; 
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.art-piece h3 {
+    color: #a0522d; /* Accentfärg */
+    margin: 10px 0 5px;
+}
+
+.view-details {
+    background-color: #4a3523; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-details:hover {
+    background-color: #a0522d; 
+}
+
+/* Footer */
+footer {
+    background-color: #d2b48c;
+    color: #4a3523;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Modal-ändring för att matcha nya färgerna */
+.modal {
+    /* ... annan CSS ... */
+    background-color: rgba(74, 53, 35, 0.7); /* Mörkbrun/opacitet bakgrund */
+}
+.close-button {
+    color: #4a3523;
+    /* ... annan CSS ... */
+}
+.close-button:hover,
+.close-button:focus {
+    color: #a0522d;
+    /* ... annan CSS ... */
+}

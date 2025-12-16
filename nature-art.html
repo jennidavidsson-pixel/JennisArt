@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenni Art | Natur</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <header>
+        <h1>NATURMOTIV</h1>
+        <p>Utforska Jenni Arts unika konstverk skapade på trä.</p>
+    </header>
+
+<nav class="art-filters">
+        <a href="index.html" class="filter-btn">Alla</a>
+        <a href="abstract-art.html" class="filter-btn">Abstrakt</a>
+        <a href="nature-art.html" class="filter-btn active">Natur</a> <a href="wood-art.html" class="filter-btn">Trätavlor</a>
+    </nav>
+
+    <main class="gallery">
+        
+        <section class="art-piece" data-title="Björk och Mossa" data-artist="E. Slöjdare">
+            <img src="placeholder-art-4.jpg" alt="Abstrakt träskulptur">
+            <h3>Vinterskog</h3>
+            <p>J. Davidsson</p>
+            <button class="view-details">Se detaljer</button>
+        </section>
+
+        <section class="art-piece" data-title="Havsvirke" data-artist="F. Formgivare">
+            <img src="placeholder-art-5.jpg" alt="Drivvedskonst">
+            <h3>Rosa Soluppgång</h3>
+            <p>J. Davidsson</p>
+            <button class="view-details">Se detaljer</button>
+        </section>
+
+        <section class="art-piece" data-title="Havsvirke" data-artist="F. Formgivare">
+            <img src="placeholder-art-9.jpg" alt="Drivvedskonst">
+            <h3>Azorerna</h3>
+            <p>J. Davidsson</p>
+            <button class="view-details">Se detaljer</button>
+        </section>
+
+        <section class="art-piece" data-title="Havsvirke" data-artist="F. Formgivare">
+            <img src="placeholder-art-12.jpg" alt="Drivvedskonst">
+            <h3>Golden Forest</h3>
+            <p>J. Davidsson</p>
+            <button class="view-details">Se detaljer</button>
+        </section>
+        
+        <section class="art-piece" data-title="Tre Lager" data-artist="G. Konsthantverkare">
+            <img src="placeholder-art-6.jpg" alt="Träpanel med tre fält">
+            <h3>Vinterstrand</h3>
+            <p>J. Davidsson</p>
+            <button class="view-details">Se detaljer</button>
+        </section>
+
+        <section class="art-piece" data-title="Tre Lager" data-artist="G. Konsthantverkare">
+            <img src="placeholder-art-13.jpg" alt="Träpanel med tre fält">
+            <h3>Våg</h3>
+            <p>J. Davidsson</p>
+            <button class="view-details">Se detaljer</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Jenni Art Showroom. Alla rättigheter reserverade.</p>
+    </footer>
+
+    <div id="artModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-artist"></p>
+            <img id="modal-image" src="" alt="Konstverksbild i detalj">
+            <p id="modal-description">Ett detaljerat konstverk, skapat med akryl på duk. Mått: 100x70 cm. Till salu.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
