@@ -135,7 +135,9 @@ footer {
     color: #a0522d;
     /* ... annan CSS ... */
 
+/* ------------------------------------ */
 /* -- STILAR FÖR KONTAKTSIDAN -- */
+/* ------------------------------------ */
 .contact-form-container {
     max-width: 600px;
     margin: 40px auto;
@@ -155,13 +157,15 @@ footer {
     margin-bottom: 20px;
 }
 
+/* FIX 1: Tvingar etiketten (label) att ta en egen rad */
 .form-group label {
-    display: block;
+    display: block; 
     margin-bottom: 5px;
     font-weight: bold;
     color: #4a3523;
 }
 
+/* FIX 2 & 3: Säkerställer att alla fält fyller ut bredden och tar en egen rad */
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group textarea {
@@ -169,8 +173,9 @@ footer {
     padding: 12px;
     border: 1px solid #d2b48c;
     border-radius: 4px;
-    box-sizing: border-box; /* Viktigt för att padding inte ska öka bredden */
+    box-sizing: border-box; 
     font-family: inherit;
+    display: block; /* VIKTIGT: Fältet tar hela bredden och en ny rad */
 }
 
 .form-group textarea {
@@ -198,5 +203,4 @@ footer {
     margin-top: 30px;
     padding-top: 20px;
     border-top: 1px solid #d2b48c;
-}
 }
