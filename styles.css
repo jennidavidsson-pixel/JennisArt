@@ -204,3 +204,26 @@ footer {
     padding-top: 20px;
     border-top: 1px solid #d2b48c;
 }
+/* --- FOOTER & INSTAGRAM STYLE --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-social {
+    margin-top: 10px;
+}
+
+.instagram-icon {
+    width: 30px; /* Storleken på loggan */
+    height: auto;
+    transition: transform 0.3s, filter 0.3s; /* Gör att animationen blir mjuk */
+}
+
+/* Effekt när man håller musen över loggan */
+.instagram-icon:hover {
+    transform: scale(1.2); /* Loggan blir lite större */
+    /* Detta skapar en lila/rosa ton (Instagram-känsla) på en svart/mörk logga */
+    filter: invert(31%) sepia(94%) saturate(1253%) hue-rotate(297deg) brightness(91%) contrast(101%);
+}
