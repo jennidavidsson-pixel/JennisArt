@@ -35,14 +35,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <main class="contact-form-container">
         
-        <form action="mailto:jennidavidsson@gmail.com">
+        <form action="mailto:jennidavidsson@gmail.com" method="POST" enctype="text/plain" class="contact-form">
 
-        <section class="contact-info">
-            <h3>Kontakta JenniArt här</h3>
-         
-            <p><a href="mailto:jennidavidsson@gmail.com">Skicka ett mail till Jenni Art</a></p>
-        </section>
-   </form>
+            <h2>Skicka ett meddelande</h2>
+
+            <div class="form-group">
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="Namn" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Skriv ert meddelande här:</label>
+                <textarea id="message" name="Meddelande" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Skicka</button>
+
+        </form>
     </main>
 
     <footer>
@@ -51,8 +65,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="https://www.instagram.com/jennidavidssonart/" target="_blank" rel="noopener noreferrer">
             <img src="instagram-logo.png" alt="Följ Jenni Art på Instagram" class="instagram-icon">
         </a>
-    </div>
-    </footer>
-
-    </body>
-</html>
