@@ -227,19 +227,18 @@ footer {
     /* Detta skapar en lila/rosa ton (Instagram-känsla) på en svart/mörk logga */
     filter: invert(31%) sepia(94%) saturate(1253%) hue-rotate(297deg) brightness(91%) contrast(101%);
 }
-    /* Ljus mintgrön knapp som poppar! */
+/* Tvingande mintgrön knapp */
 .art-filters a[href="contact.html"] {
-    background-color: #A8F0D4;             /* Klar och ljus mintgrön */
-    color: #123C2B;                         /* Mörk skogsgrön text för skarp kontrast */
-    font-weight: 600;                       /* Lite fylligare text */
-    border: 2px solid #8CE5C2;              /* Mjuk inramning */
-    box-shadow: 0 4px 14px rgba(168, 240, 212, 0.4); /* Mjukt mintfärgat sken */
-    transition: all 0.25s ease-in-out;       /* Gör hovringseffekten mjuk */
+    background-color: #A8F0D4 !important;
+    color: #123C2B !important;
+    font-weight: 600 !important;
+    border: 2px solid #8CE5C2 !important;
+    box-shadow: 0 4px 14px rgba(168, 240, 212, 0.4) !important;
+    transition: all 0.25s ease-in-out !important;
 }
 
-/* När man för musen över knappen */
 .art-filters a[href="contact.html"]:hover {
-    background-color: #BEF7E1;             /* Ännu ljusare och strålande mint vid hover */
-    transform: translateY(-2px);           /* Lyfter knappen lätt för en "poppande" känsla */
-    box-shadow: 0 6px 20px rgba(168, 240, 212, 0.6); /* Starkare sken */
+    background-color: #BEF7E1 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(168, 240, 212, 0.6) !important;
 }
